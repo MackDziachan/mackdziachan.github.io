@@ -1,23 +1,198 @@
----
-layout: default
----
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 
-<div class="home">
+  <title>JockinStyle</title>
+  <meta charset="utf-8" />
 
-  <h1 class="page-heading">Posts</h1>
+  <link href='https://fonts.googleapis.com/css?family=Roboto:300,400,700' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" type="text/css" href="main.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css"/>
 
-  <ul class="post-list">
-    {% for post in site.posts %}
-      <li>
-        <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
+  <style>
+  body {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
+}
 
-        <h2>
-          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-        </h2>
-      </li>
-    {% endfor %}
-  </ul>
+header {
+  padding: 20px 0;
+}
 
-  <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
+header .row,
+footer .row {
+  display: flex;
+  align-items: center;
+}
 
-</div>
+header h1 {
+  font-weight: 700;
+  margin: 0;
+}
+
+header nav {
+  display: flex;
+  justify-content: flex-end;
+}
+
+header p {
+  padding: 0 20px;
+  margin: 0;
+}
+
+.jumbotron {
+  display: flex;
+  align-items: center;
+  /* background-image: url('https://2.bp.blogspot.com/-D5zjxO914Mk/Wb26g9v99gI/AAAAAAAADSk/yJ7_Iyph-Y4CkpbwmWBv24Bru7DFcIpBwCLcBGAs/s1600/p22.JPG');
+  background-size: cover;
+  opacity:0.9;*/
+  background-color:#000;
+  color: #ffffff;
+  height: 500px;
+  text-shadow: 0.25px 0.25px 0.25px #000000;
+}
+
+.jumbotron h2 {
+  font-size: 60px;
+  font-weight: 700;
+  margin: 0;
+  color: #fff;
+}
+
+.jumbotron h3 {
+  margin: 0 0 20px;
+  color: #fff;
+}
+
+section .row img {
+  margin: 0 0 30px;
+  width: 100%;
+}
+
+.col-md-6 {
+  margin: 0 0 30px;
+}
+
+.btn.btn-primary {
+  border-radius: 2px;
+  border: 0px;
+  color: #000;
+  text-shadow: none;
+  background-color: #fff;
+}
+
+.btn.btn-primary:hover {
+  color: #ffffff;
+  background-color: #FF4D00;
+}
+
+.btn-secondary {
+  background-color: #000;
+  color: #fff;
+  margin: 0 0 30px;
+}
+
+footer {
+  font-size: 12px;
+  padding: 20px 0;
+}
+
+footer .col-sm-8 {
+  display: flex;
+  justify-content: flex-end;
+}
+
+footer ul {
+  list-style: none;
+}
+
+footer li img {
+  width: 32px;
+  height: 32px;
+}
+
+.heroimage {
+  width:200px;
+}
+</style>
+
+</head>
+
+<body>
+  <header class="container">
+    <div class="row">
+      <h1 class="col-sm-8">
+        <img class="heroimage" src="https://1.bp.blogspot.com/-dzNAEe9DPa4/WbYU9iL2TrI/AAAAAAAADRA/V9T_bs2NnZws1N-rdkHTgGxZUtLqRVBfQCLcBGAs/s1600/TITLE.png">
+      </h1>
+      <nav class="col-sm-4">
+        <p>newest</p>
+        <p>archive</p>
+        <p>contact</p>
+      </nav>
+    </div>
+  </header>
+  <section class="jumbotron">
+    <div class="container">
+      <div class="row text-center">
+        <h2>Mackensie Dziachan</h2>
+        <h3>This is it.</h3>
+        <a class="btn btn-primary" href="#">Get After It</a>
+      </div>
+    </div>
+  </section>
+  <section class="container">
+    <div class="row">
+      <div class="col-sm-6">
+        <img src="https://1.bp.blogspot.com/-Y_uz0cVkd_4/Wb3K7-xZTGI/AAAAAAAADTQ/ncs2IZTB5_ACYgKFfFUuzvpJZ6O_RmvZwCEwYBhgL/s1600/YOSEMITE.png">
+      </div>
+      <div class="col-sm-6">
+        <img src="https://2.bp.blogspot.com/-Eu0X_32HDtA/Wb3LOLZM2zI/AAAAAAAADTU/mG4b_Q2iRe4EyEIq1_EShbAzgQONm_EdgCLcBGAs/s1600/BigSur.png">
+      </div>
+      <div class="col-sm-6">
+        <img src="https://3.bp.blogspot.com/-oz6WvHn0QCI/Wb3RfbR7vEI/AAAAAAAADTo/mIeXvRAm-NEPSbYJTQNFLzYovSg5v2jNACLcBGAs/s1600/WHISTLER.png">
+      </div>
+      <div class="col-sm-6">
+        <img src="https://2.bp.blogspot.com/-v0b34WLfvik/Wb3T6REmfmI/AAAAAAAADT8/dAY9UU1KzvEjaXyDEEkhPFcOH4oRcvZeQCLcBGAs/s1600/MT.TAM.png">
+      </div>
+    </div>
+    <div class="row text-center">
+      <a class="btn btn-secondary" href="#">View All Adventures</a>
+    </div>
+  </section>
+  <footer class="container">
+    <div class="row">
+      <p class="col-sm-4">&copy; 2017 JockinStyle</p>
+      <ul class="col-sm-8">
+
+        <li class="col-sm-1">
+          <a href="https://www.instagram.com/jockinstyle/">
+            <img src="https://2.bp.blogspot.com/-ZNfj0D8d8mo/Wb3fRA72vJI/AAAAAAAADUQ/1dTU8h7YKrcJegs55-JJFa5e6x8c5EtcgCLcBGAs/s1600/Insta%2BIcon.png">
+          </a>
+        </li>
+
+        <li class="col-sm-1">
+          <a href="https://www.pinterest.com/dziachan/pins/">
+            <img src="https://3.bp.blogspot.com/-l3EHf8uhFik/Wb3fTO6L8rI/AAAAAAAADUU/-XipfpD2msYN8PbTS-opbWYSH5YKw7fMQCLcBGAs/s1600/Pinterest%2BIcon.png">
+          </a>
+        </li>
+
+        <li class="col-sm-1">
+          <a href="https://jockinstyle.tumblr.com/">
+            <img src="https://1.bp.blogspot.com/-vA3V5QZCw8I/Wb3fUXpIogI/AAAAAAAADUY/n7DdDQ3UzI4lPxbTawvRCvOkwHsxJJdhACLcBGAs/s1600/Tumblr%2BIcon.png">
+          </a>
+        </li>
+
+        <li class="col-sm-1">
+          <a href="https://www.linkedin.com/in/m-dziachan/">
+            <img src="https://3.bp.blogspot.com/-197mktWM9i4/Wb3fRDSoDBI/AAAAAAAADUM/C2Zt8QN-L_MWKY5MZSno3q6X_GrnUHZ-gCLcBGAs/s1600/LinkedIn%2BIcon.png">
+          </a>
+        </li>
+
+      </ul>
+    </div>
+  </footer>
+</body>
+
+</html>
+
