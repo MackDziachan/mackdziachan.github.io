@@ -1,0 +1,105 @@
+<style>
+
+body {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
+}
+
+header {
+  padding: 20px 0;
+}
+
+header .row,
+footer .row {
+  display: flex;
+  align-items: center;
+}
+
+header h1 {
+  font-weight: 700;
+  margin: 0;
+}
+
+header nav {
+  display: flex;
+  justify-content: flex-end;
+}
+
+header p {
+  padding: 0 20px;
+  margin: 0;
+}
+
+}
+
+div img {
+  margin: 0 0 30px;
+  width: 100%;
+}
+
+.col-md-6 {
+  margin: 0 0 30px;
+}
+
+
+footer {
+  font-size: 12px;
+  padding: 20px 0;
+}
+
+footer .col-sm-8 {
+  display: flex;
+  justify-content: flex-end;
+}
+
+footer ul {
+  list-style: none;
+}
+
+footer li img {
+  width: 32px;
+  height: 32px;
+}
+
+.heroimage {
+  width:200px;
+}
+
+.col-sm-6 {
+  background-color:black;
+  color:white;
+  font-size:50px;
+  padding:20px 10% 20px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 8em
+}
+
+.col-sm-6 img {
+  width:200px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  padding-bottom:20px;
+}
+
+.col-sm-6 h1 {
+  display:inline-block;
+}
+
+
+.row.match-my-cols {
+    overflow: hidden; 
+}
+
+.row.match-my-cols [class*="col-"]{
+    margin-bottom: -99999px;
+    padding-bottom: 99999px;
+}
+
+.match-my-cols .box {
+  background: none;
+  position: static;
+}
+
+</style>
